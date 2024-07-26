@@ -7,8 +7,6 @@ body{
   background-color: rgb(243, 238, 228);
 }
 
-
-
 /* Separação para mudar a responsividade*/
 @media (max-width: 375px) { /*Codigo para dar a responsibilidade*/
   #logoecobrieduque { /*modifica a logo do cabeçalho*/
@@ -541,7 +539,7 @@ body{
 }
 
 /* Separação para mudar a responsividade*/
-@media (min-width:1700) and (max-width: 1900px){ /*Codigo para dar a responsibilidade*/
+@media (min-width:1500px) and (max-width: 10000px){ /*Codigo para dar a responsibilidade*/
   
   #logoecobrieduque { /*modifica a logo do cabeçalho*/
     width: 165px;
