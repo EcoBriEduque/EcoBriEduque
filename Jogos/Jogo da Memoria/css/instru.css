@@ -1,0 +1,58 @@
+
+* {
+    background-image: url('../images/imgCapaFindoIntro.png'); /* essa é a imagem do fundo do jogo*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+  }
+  
+
+    .login__header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1px;
+      }
+  
+    .login__header a{
+      color: #7C4CDD;
+      text-decoration: none;
+      margin-top: 50px;
+      border: 1.7px solid #5DC4FF;
+      border-radius: 55px;
+      margin-top: 2%;
+      font-size: 20px;
+      outline: none;
+      padding: 15px;
+      
+    }
+    .login__header h1 {
+      font-size: 3.2em;
+      -webkit-text-stroke-width: 1px; /* Borda em volta do texto*/
+     -webkit-text-stroke-color: #000;
+      color: #FAED3D;
+      text-shadow: #FFA100 0.1em 0.1em 0.1em /* Esfumado em volta do texto*/
+    }
+    .login__header h2 {
+        font-size: 15px;
+        font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+        margin-bottom: 20px;
+        margin-top: 0.5px;
+        margin-left: 200px;
+        margin-right: 200px;
+        color: #000;
+      }
+    
+    .login__header h3 {
+        font-size: 2em;
+        margin-top: auto;
+        -webkit-text-stroke-width: 1px; /* Borda em volta do texto*/
+       -webkit-text-stroke-color: #000;
+        color: #7C4CDD;
+        text-shadow: #5DC4FF 0.1em 0.1em 0.1em /* Esfumado em volta do texto*/
+      }
+      

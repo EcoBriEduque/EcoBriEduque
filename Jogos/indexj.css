@@ -1,0 +1,10 @@
+
+* {
+  background-image: url('../Jogos/Images/imgCapadeFundo.png'); /* essa é a imagem do fundo do jogo*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-origin: padding-box;
+  background-clip: border-box;
+}

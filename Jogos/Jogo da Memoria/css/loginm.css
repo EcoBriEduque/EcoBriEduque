@@ -1,0 +1,81 @@
+
+* {
+  background-image: url('../images/imgCapadeFundoLogin.png'); /* essa é a imagem do fundo do jogo*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+.login-form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  .login__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .login__header a{
+    color: #7C4CDD;
+    text-decoration: none;
+    margin-top: 50px;
+    border: 1.7px solid #5DC4FF;
+    border-radius: 55px;
+    font-size: 14px;
+    outline: none;
+    padding: 15px;
+    
+  }
+  .login__header h1 {
+    font-size: 2em;
+    -webkit-text-stroke-width: 1px; /* Borda em volta do texto*/
+   -webkit-text-stroke-color: #000;
+    color: #FAED3D;
+    text-shadow: #FFA100 0.1em 0.1em 0.1em /* Esfumado em volta do texto*/
+  }
+  .login__header h3 {
+    font-size: 2em;
+  }
+  
+  input::placeholder { /* Mudar a cor do placeholder(Digite seu nome)*/
+    color: #FFA100;
+  }
+  .login__input {
+    border: 2px solid #cf3b3b;
+    border-radius: 8px;
+    color:#FFA100;
+    font-size: 1em;
+    margin-bottom: 15px;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .login__button {
+    border: 2px solid #7ED957;
+    border-radius: 8px;
+    color: #9FCA45;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .login__button:disabled {
+    background-color: #eee;
+    border: 2px solid #969595;
+    color: #aaa;
+    cursor: auto;
+  }
