@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/imgCapaFundoJogo.png);
+    background-color:#EEEEE2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-origin: padding-box;
+    background-clip: border-box;
+  }
+  
+  
+  .container {
+    max-width: 800px;
+    animation: fadeIn 1s ease-out;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #a5bc94e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #ffffff1a;
+    position: relative;
+  }
+  
+  h1 {
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .start-button, .next-button { /* Botao */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    background-color: #597653bd;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  
+  .start-button:hover, .next-button:hover {
+    background-color: #597653de;
+  }
+  
+ 
+  img{
+  width: 100px; /* Ajusta a largura da imagem para 100 pixels */
+  height: auto; /* Mantém a proporção da imagem */
+  animation: bounce 1s infinite alternate;
+  }
+  
+  .centered-image {
+  display: block; /* Garante que a imagem será um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  }
+  
+  
+ 
+.instructions-container {
+  max-width: 800px;
+  animation: fadeIn 1s ease-out;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #a5bc94bb;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+
+ul {
+  text-align: left; 
+  font-size: 1em;
+  margin: 0 auto 20px auto; 
+  padding-left: 20px; 
+}
+
+
+.restart-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #597653bd;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.restart-button:hover {
+  background-color: #597653de;
+}
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}

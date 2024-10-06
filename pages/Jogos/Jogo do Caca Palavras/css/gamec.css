@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/imgCapadeFundoJogo.png);
+    background-color: #EEEEE2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background: #a5bc94bb;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 20px; 
+    position: relative; 
+}
+
+.tempoecontagem {
+    position: absolute; /* Para posicionar no canto superior direito */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+#tempo {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: normal; /* Removendo o negrito */
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(12, 40px);
+    grid-template-rows: repeat(12, 40px);
+    gap: 5px;
+    margin: 20px auto; /* Centraliza horizontalmente */
+    width: fit-content; /* Ajusta a largura ao conteúdo */
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c8d66;
+    border: 2px solid #597653;
+    font-size: 24px;
+    font-weight: bold; /* As letras nas células ficam em negrito */
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: #364733;
+}
+
+.cell.selected {
+    background-color: #364733; /* Cor de seleção */
+}
+
+.word {
+    text-align: center; /* Centralizar o texto */
+}
+
+.word h2 {
+    margin: 30px 0; 
+    font-size: 17px;
+}
+
+.word div {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); 
+    gap: 10px;
+}
+
+.word div span {
+    display: block;
+    font-weight: bold; 
+}
+
+.word div span.correct {
+    text-decoration: line-through; 
+    color: #232c20; 
+}
+
+button {
+    margin-top: 40px; 
+    padding: 10px 20px;
+    background-color: #597653bd;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #597653de;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+img {
+    width: 100px;
+    height: auto; 
+}
+
+.centered-image {
+    display: block; 
+    margin: 0 auto;
+}

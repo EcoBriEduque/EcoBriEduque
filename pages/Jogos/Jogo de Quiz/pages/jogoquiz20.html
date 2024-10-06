@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Com 20 Perguntas| Jogo</title>
+    <link rel="stylesheet" href="../css/jogoquiz.css">
+    <link rel="shortcut icon" href="../../../../img/logoEcobrieduqueTitulo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="quiz-container">
+        <img src="../../../../img/logoEcobrieduqueTitulo.png" alt="" id="img">
+        <div id="timer">Tempo: <span id="time">40</span>s</div>
+        <div id="question-container">
+            <!-- Pergunta e opções serão injetadas aqui pelo JavaScript -->
+        </div>
+        <button id="next-button" class="next-button" onclick="nextQuestion()">Próxima Pergunta</button>
+        <button id="restart-button" href="../indexquiz20.html" class="restart-button" onclick="restartQuiz()" style="display: none;">Jogar Novamente</button>
+    </div>
+
+    <script src="../js/jogoquiz20.js"></script>
+</body>
+</html>
