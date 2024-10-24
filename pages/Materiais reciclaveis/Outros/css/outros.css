@@ -76,7 +76,7 @@
 
 
 
-#MaterialPapel {
+#MaterialPOutros {
     padding: 0.7rem;
     margin-bottom: 30px;
     background-color: transparent; /* Fundo transparente */
@@ -94,7 +94,7 @@
     }
 }
 
-.imgPapel {
+.imgOutros {
     width: 20%;
     height: auto;
     margin: 40px auto; 
@@ -102,32 +102,33 @@
     margin-bottom: 10px;
 }
 
-#MaterialPapel h2 {
+#MaterialOutros h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
-    color: #54BFFD; /* Azul escuro */
+    color: #707070; /* Azul escuro */
     margin-bottom: 1.5rem;
     position: relative;
     margin-top: 4.0rem;
 }
 
-#MaterialPapel h2::after {
+#MaterialOutros h2::after {
     content: '';
     display: block;
     height: 3px;
     width: 50px;
-    background: #54BFFD; /* Azul mais claro */
+    background: #3b3b3b; /* Azul mais claro */
     margin-top: 5px;
     transition: width 0.3s ease;
 }
 
-#MaterialPapel h2:hover::after {
+#MaterialOutros h2:hover::after {
     width: 150px; 
 }
 
-#MaterialPapel p {
+#MaterialOutros p {
     margin-bottom: 0.7rem;
     color: var(--cor-texto); 
+    margin-left: 10px;
 }
 
 
@@ -141,27 +142,27 @@ table {
 }
 
 table th, table td {
-  border: 1px solid #0080CB; 
+  border: 1px solid #919191; 
   padding: 8px; 
   text-align: center; 
 }
 
 table th {
-  background-color: #54BFFD; 
+  background-color: #b9b9b9; 
   color: rgb(0, 0, 0);
   font-weight: bold; 
 }
 
 table tr:nth-child(even) {
-  background-color: #cce5ff; 
+  background-color: #c9cccf; 
 }
 
 
 .imglateraldireita {
   float: right; /* Faz a imagem flutuar à direita */
-  width: 220px; /* Ajuste o tamanho da imagem conforme necessário */
-  margin-left: 10px; /* Espaço entre o texto e a imagem */
-  margin-right: 20px;
+  width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-left: 0 auto; /* Espaço entre o texto e a imagem */
+  margin-right: 0 auto;
   margin-top: 0; /* Ajuste o espaço acima, se necessário */
 }
 
@@ -173,22 +174,24 @@ table tr:nth-child(even) {
   margin-top: 0; /* Ajuste o espaço acima, se necessário */
 }
 
-#MaterialPapel a {
+#MaterialOutros a {
     color: #0080CB; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-#MaterialPapel a:hover {
+#MaterialOutros a:hover {
     color: #0080CB; 
     text-decoration: underline;
 }
 
-#MaterialPapel br {
+#MaterialOutros br {
     display: none; 
 }
-
+#MaterialOutros li{
+  margin-left: 50px;
+}
 
 
   
