@@ -1,0 +1,120 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--cor-fundo);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Definindo cores e variáveis */
+:root {
+    --cor-primaria: #597653; 
+    --cor-secundaria: #a5bc94; 
+    --cor-fundo: #e6e6ca;
+    --cor-texto: #000000;
+}
+
+/* Container Principal */
+.container {
+    text-align: center;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px; 
+    margin-bottom: 20px; /* Espaço acima das lixeiras */
+}
+
+/* Imagem da Logo */
+#img {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto;
+    margin: 20px 0; /* Espaço acima e abaixo da imagem */
+}
+
+/* Títulos */
+h1 {
+    color: var(--cor-primaria);
+    font-size: 2.5em;
+    margin: 10px 0; /* Espaço acima e abaixo do título */
+}
+
+/* Score e Timer */
+.score-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: var(--cor-primaria);
+}
+
+/* Exibição de Pontos */
+.points-display {
+    font-size: 1em;
+    color: var(--cor-primaria);
+    margin: 10px 0;
+}
+
+/* Lixos na Parte Superior */
+.lixo-row {
+    display: flex;
+    justify-content: center; /* Centraliza os lixos */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    flex-wrap: wrap;
+    gap: 15px; /* Espaçamento entre os lixos */
+}
+
+/* Lixo Individual */
+.lixo {
+    width: 50px;
+    height: 50px;
+    cursor: grab;
+    user-select: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+/* Lixo em Ação */
+.lixo:active {
+    cursor: grabbing;
+    transform: scale(0.95);
+}
+
+/* Lixeiras na Parte Inferior */
+.bin-container {
+    display: flex;
+    justify-content: center; /* Centraliza as lixeiras */
+    margin-top: auto; /* Empurra as lixeiras para o rodapé */
+    margin-bottom: 20px; /* Espaço abaixo das lixeiras */
+    gap: -16px; /* Aumentar o espaçamento entre as lixeiras */
+}
+
+/* Lixeira Individual */
+.bin {
+    width: 128px;
+    height: 190px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent; /* Torna a lixeira transparente */
+}
+
+/* Imagem da Lixeira */
+.bin img {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px; /* Borda arredondada */
+}
+
+.imglogo {
+    width: 100px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.centered-image {
+    display: block; /* Garante que a imagem será um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}

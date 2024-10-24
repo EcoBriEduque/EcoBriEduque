@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBriEduque</title>
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="shortcut icon" href="../../img/logoEcobrieduqueTitulo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="../../img/logoEcobrieduque.png" alt="" id="logoecobrieduque">
+        <nav id="navegacao">
+            <div class="botoesNavegacao">
+                <a href="../../index.html" target="_self" class="links">
+                    <img src="../../img/imghome.png" alt="" class="imgRedes">
+                    <h6>Home</h6>
+                </a>
+            </div>
+            <div class="botoesNavegacao"><a href="../Doar/doar.html" target="_self" class="links"><img src="../../img/imgdoar.png" alt="" class="imgRedes">
+                    <h6>Doar</h6>
+                </a></div>
+
+            <div class="botoesNavegacao"><a href="#" target="_self" class="links">
+                    <img src="../../img/imgreciclagem.png" alt="" class="imgRedes">
+                    <h6>Reciclagem</h6>
+                </a></div>
+
+            <div class="botoesNavegacao"><a href="../Informacoes/informacoes.html" target="_self" class="links"><img src="../../img/imginformacoes.png" alt="" class="imgRedes">
+                    <h6>Informações</h6>
+                </a></div>
+
+            <div class="botoesNavegacao"><a href="../Contato/contato.htm" target="_self" class="links"><img src="../../img/imgContato.png" alt="" class="imgRedes">
+                    <h6>Contato</h6>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Seção de imagem e link para cadastro -->
+        <div class="imgCadastro">
+            <img src="../../img/logoEcobrieduqueTitulo.png" alt="Cadastro">
+        </div>
+
+        <!-- Formulário -->
+        <form id="registration-form">
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="name">Nome <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Primeiro Nome">
+                </div>
+                <div class="form-field">
+                    <label for="surname">Sobrenome (Opcional)</label>
+                    <input type="text" id="surname" name="surname" placeholder="Sobrenome">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Endereço de Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com">
+            </div>
+            <div class="form-field">
+                <label for="cpf">CPF <span class="required">*</span></label>
+                <input type="text" id="cpf" name="cpf" required placeholder="000.000.000-00">
+            </div>
+            <div class="form-field">
+                <label for="dob">Data de Nascimento <span class="required">*</span></label>
+                <input type="text" id="dob" name="dob" required placeholder="dd/mm/aaaa">
+            </div>
+            <div class="form-field">
+                <label for="gender">Gênero <span class="required">*</span></label>
+                <select id="gender" name="gender" required>
+                    <option value="">Selecione seu gênero</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="prefer_not_to_say">Prefiro não informar</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label for="phone">Telefone <span class="required">*</span></label>
+                <input type="text" id="phone" name="phone" required placeholder="(00) 00000-0000">
+            </div>
+            <div class="form-row">
+                <div class="form-field">
+                    <label for="city">Cidade <span class="required">*</span></label>
+                    <input type="text" id="city" name="city" required placeholder="Cidade">
+                </div>
+                <div class="form-field">
+                    <label for="state">Estado <span class="required">*</span></label>
+                    <input type="text" id="state" name="state" required placeholder="ex: SP">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="user_type">Tipo de Usuário <span class="required">*</span></label>
+                <select id="user_type" name="user_type" required>
+                    <option value="">Selecione o tipo de usuário</option>
+                    <option value="colecionador">Coletor</option>
+                    <option value="separador">Separador</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <footer>
+        <a href="#top" class="VoltaraoTopo">
+            <img src="../../img/imgSetaTopo.png" alt="Voltar ao Início">
+        </a>
+        <div class="footer">
+            <div class="Rodape">
+                <h3>Sobre Nós</h3>
+                <p>ㅤA <b>EcoBriEduque</b> promove a reciclagem ao cadastrar e apoiar coletores de materiais recicláveis. Nosso compromisso é com a sustentabilidade e a educação ambiental, transformando resíduos em recursos para um futuro mais verde.</p>
+            </div>
+            <div class="Rodape">
+                <h3>Redes Sociais</h3>
+                <div class="RedesSociais">
+                    <a href="mailto:ecobrieduque@gmail.com?subject=Assunto do e-mail&body=Olá,%20Gostaria%20de%20entrar%20em%20contato." target="_self" class="sociais">
+                        <img src="../../img/imgLogoEmail.png" alt="Email">
+                    </a>
+                    <a href="https://www.instagram.com/ecobrieduque/?next=%2F" target="_self" class="sociais">
+                        <img src="../../img/imgLogoInstagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61562178202946" target="_self" class="sociais">
+                        <img src="../../img/imgLogoFecebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://x.com/EcoBriEduque" target="_self" class="sociais">
+                        <img src="../../img/imgLogoTwitter.png" alt="Twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ecobri-eduque-890020318/" target="_self" class="sociais">
+                        <img src="../../img/imgLogoLinkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+
+               
+                <div class="Contato">
+                    <a href="../EcoBriEduque/pages/Contato/contato.htm" target="_self" class="LinkContato">
+                        <img src="../../img/imgLogoContato.png" alt="Contato" class="imgContato">
+                        <span>Entre em Contato!</span>
+                    </a>
+                </div>
+            </div>
+            <div class="Rodape">
+                <h3>Saiba Mais</h3>
+                <ul>
+                    <li><a href="../Termos/Sobre/Sobre.html" target="_self">Sobre</a></li>
+                    <li><a href="../Termos/Termos de Privaciade/termoprivacidade.html" target="_self" >Política de Privacidade</a></li>
+                    <li><a href="../Termos/termos de uso/termosdeuso.html" target="_self">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Direitos">
+            <p>&copy; 2024. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });}
+    </script>
+    </div>
+      
+</body>
+
+</html>
