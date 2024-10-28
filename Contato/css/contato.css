@@ -1,0 +1,423 @@
+/* Resetando margens e espaçamentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  /* Definindo cores */
+  :root {
+    --cor-primaria: #597653; 
+    --cor-secundaria: #597653; 
+    --cor-fundo: #ffffe9;
+  }
+  
+  /* Estilos gerais */
+  body {
+   
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-weight: normal;
+    
+  }
+  
+  header {
+    font-weight: normal;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: rgb(0, 0, 0) 1px solid;
+  }
+  
+  #logoecobrieduque {
+    height: 140px;
+    
+  }
+  #navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: normal;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 5%;
+    border-left: #a5bc94 1px solid;
+  
+  }
+  
+  .botoesNavegacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animação suave para hover */
+  
+  }
+  
+  .botoesNavegacao a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .imgRedes {
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  footer {
+    background-color: var(--cor-secundaria);
+    color: #000000;
+    padding: 20px 20px;
+    position: relative;
+    border-top: rgb(0, 0, 0) 1px solid;
+  }
+  
+  .VoltaraoTopo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #a5bc94;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    z-index: 1000;
+  }
+  
+  .VoltaraoTopo img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .VoltaraoTopo:hover {
+    background-color: #486143;
+    box-shadow: 0 4px 8px var(--cor-primaria); /* Adiciona uma sombra ao botão */
+  
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .Rodape {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .Rodape h3 {
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 1px solid #a5bc94;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family:  Arial, sans-serif;
+  }
+  
+  .Rodape p, .Rodape ul {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .Rodape ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .Rodape ul li {
+    margin-bottom: 10px;
+  }
+  
+  .Rodape ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .Rodape ul li a:hover {
+    color: #a5bc94;
+  }
+  
+  .RedesSociais {
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 10px;
+  }
+  
+  .sociais {
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .sociais img {
+    width: 40px; 
+    height: 40px; 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+  }
+  
+  .sociais img:hover {
+    transform: scale(1.2); 
+    opacity: 0.8;
+  }
+  
+  .Contato {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    padding: 8px; 
+    border: 1px solid #a5bc94; 
+    border-radius: 6px;
+    background-color: #a5bc94; 
+    width: fit-content; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; 
+  }
+  
+  .LinkContato {
+    display: flex;
+    align-items: center; 
+    text-decoration: none; 
+    color: rgb(0, 0, 0); 
+    transition: color 0.3s ease; 
+  }
+  
+  
+  .imgContato {
+    width: 20px; 
+    height: 20px;
+    margin-right: 6px;
+    object-fit: contain;
+    transition: transform 0.3s ease; 
+  }
+  
+  
+  .LinkContato span {
+    font-size: 12px; 
+    font-weight: 400; 
+    white-space: nowrap;
+  }
+  
+  
+  .Contato:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  .LinkContato:hover {
+    color: #486143;
+  }
+  
+  
+  .LinkContato:hover .imgContato {
+    transform: scale(1.2); 
+  }
+  
+  .Direitos {
+    color: #a5bc94;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .Direitos p {
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .botoesNavegacao:hover {
+    transform: scale(1.2);
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+  
+  }
+  #secaoInformacao{
+    width: 100%;
+    display:flex
+  }
+   #secaoInformacao section{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #a5bc94;
+    border: #333 1px solid;
+    margin: 2%;
+  
+   }
+  
+   .links {
+    text-decoration: none;
+    color: #000000; /* Cor padrão do texto */
+    transition: color 0.3s ease; /* Transição suave para mudança de cor */
+  }
+  
+  .links:hover h6 {
+    color: #a5bc94; /* Cor do texto ao passar o mouse */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos principais da seção de contato */
+#secaoContato {
+   padding-bottom: 20px;
+    background-color: #EEEEE2;
+
+}
+
+.containerContato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-right: 50px;
+}
+
+.imgContato {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos para a imagem */
+.imgc {
+    padding-top: 700px;
+    width: 100%;
+    max-width: 150px;
+    transition: none;
+}
+
+/* Estilo do texto abaixo da imagem */
+.texto {
+    margin-top: 55px;
+    font-size: 1em;
+    padding-right: 75px;
+    padding-left: 75px;
+    align-items: center;
+    color: #597653;
+    text-align: center;
+    opacity: 1;
+    transform: translateY(0);
+    font-style: italic; 
+}
+
+
+/* Estilos da descrição de contato */
+.descricaoContato {
+    flex: 2;
+    background-color: #a5bc94;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-top: 20px;
+    
+    transition: background-color 0.3s ease;
+}
+
+.descricaoContato:hover {
+    background-color: #a5bc94 ;
+}
+
+.descricaoContato h2 {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #597653;
+    font-style:italic; 
+    margin-bottom: 20px;
+}
+
+.descricaoContato p {
+    font-size: 1.1em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Estilos para o formulário */
+.campo {
+    font-style:italic; 
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #51694c ;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.botao {
+    background-color: #597653de;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+/* Efeito de hover no botão */
+.botao:hover {
+    background-color: #51694c; 
+}
+
+
+.botao:active {
+    transform: none; 
+}
