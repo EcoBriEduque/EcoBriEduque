@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(../images/imgCapadeFundo.png);
+  background-color: #EEEEE2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  position: relative;
+}
+
+h1 {
+  color: #000;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.start-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  background-color: rgba(89, 118, 83, 0.75);
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 80px 0;
+}
+
+.start-button:hover {
+  background-color: rgba(89, 118, 83, 0.85);
+  transform: scale(1.0);
+}
+
+img {
+  width: 100px; 
+  height: auto; 
+  animation: bounce 1s infinite alternate;
+}
+
+.centered-image {
+  display: block; 
+  margin: 0 auto; 
+}
+
+ul {
+  text-align: left; 
+  font-size: 1em;
+  margin: 0 auto 20px auto; 
+  padding-left: 20px; 
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+

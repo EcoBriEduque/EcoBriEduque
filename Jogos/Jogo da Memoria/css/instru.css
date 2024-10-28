@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(../images/imgCapadeFundoInstrucao.png);
+  background-color: #EEEEE2;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.start-button, .next-button, .restart-button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 1em;
+  color: #000000;
+  background-color: #597653bd;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Margem superior para espaçamento */
+}
+
+.start-button:hover, .next-button:hover, .restart-button:hover {
+  background-color: #597653de;
+}
+
+.question {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.option:hover {
+  transform: scale(1.1);
+}
+
+#timer {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.option.correct {
+  background-color: #597653; /* Cor que fica quando acerta a pergunta */
+  border: 1px solid #a5bc94; /* Cor da borda */
+}
+
+.option.incorrect {
+  background-color: #db5050; /* Cor que fica quando erra a pergunta */
+  border: 1px solid #a5bc94; /* Cor da borda */
+}
+
+img {
+  width: 100px; /* Ajusta a largura da imagem para 100 pixels */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.centered-image {
+  display: block; /* Garante que a imagem será um bloco */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.instructions-container {
+  max-width: 800px;
+  animation: fadeIn 1s ease-out;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #a5bc9479;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+ul {
+  text-align: left; 
+  font-size: 1em;
+  margin: 0 auto 20px auto; 
+  padding-left: 20px; 
+}
+
+/* Estilo para o botão "Próxima Pergunta" fora do contêiner */
+#next-button {
+  position: fixed; /* Fixa o botão em relação à tela */
+  right: 220px; /* Distância da direita */
+  bottom: 220px; /* Distância do fundo */
+  display: inline-block; /* Permite que o botão seja um bloco */
+}
+
+#next-button {
+  display: none; /* Começa escondido, deve ser exibido com JavaScript */
+}

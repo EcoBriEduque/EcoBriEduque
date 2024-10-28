@@ -1,0 +1,295 @@
+/* Resetando margens e espaçamentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Definindo cores */
+:root {
+  --cor-primaria: #597653; 
+  --cor-secundaria: #597653; 
+  --cor-fundo: #EEEEE2;
+}
+
+/* Estilos gerais */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-primaria);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--cor-texto);
+  border-bottom: black 1px solid;
+}
+
+#logoecobrieduque {
+  height: 140px;
+}
+
+#navegacao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 5%;
+  border-left: 1px solid var(--cor-texto);
+}
+
+.botoesNavegacao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.botoesNavegacao a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-size: 20px;
+  text-align: center;
+}
+
+.imgRedes {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+/* Espaço principal */
+#secaoInformacao {
+  background-color: var(--cor-fundo);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.informacoes, .servicos {
+  width: 48%;
+  background-color: #A5BC94;
+  border:black 1px solid ;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+  
+}
+
+.informacoes h2, .servicos h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.informacoes p, .servicos p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-secundaria);
+  padding: 20px 0;
+  text-align: center;
+  border-top: black 1px solid;
+
+}
+
+footer h5 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: var(--cor-texto);
+}
+
+.imgRedesSociais {
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  border-radius: 100%;
+}
+
+.imgRedesSociais:hover {
+  transform: scale(1.2);
+}
+.botoesNavegacao:hover {
+  transform: scale(1.2);
+
+}
+
+.imgRedesSociais:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos responsivos */
+@media (max-width: 1440px) {
+  #navegacao {
+    gap: 15px;
+  }
+
+  .botoesNavegacao a {
+    font-size: 18px;
+  }
+
+  #logoecobrieduque {
+    height: 60px;
+  }
+
+  .imgRedes {
+    height: 25px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #navegacao {
+    gap: 10px;
+  }
+
+  .botoesNavegacao a {
+    font-size: 17px;
+  }
+
+  #logoecobrieduque {
+    height: 55px;
+  }
+
+  .imgRedes {
+    height: 24px;
+  }
+
+  footer h5 {
+    font-size: 17px;
+  }
+
+  .imgRedesSociais {
+    height: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 10px;
+  }
+
+  #navegacao {
+    gap: 15px;
+  }
+
+  .botoesNavegacao a {
+    font-size: 16px;
+  }
+
+  #logoecobrieduque {
+    height: 50px;
+  }
+
+  .imgRedes {
+    height: 20px;
+  }
+
+  footer h5 {
+    font-size: 16px;
+  }
+
+  .imgRedesSociais {
+    height: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #navegacao {
+    display: none;
+  }
+
+  .botoesNavegacao a {
+    font-size: 15px;
+  }
+
+  #logoecobrieduque {
+    height: 45px;
+  }
+
+  .imgRedes {
+    height: 20px;
+  }
+
+  footer h5 {
+    font-size: 15px;
+  }
+
+  .imgRedesSociais {
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  #navegacao {
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 10px;
+  }
+
+  .botoesNavegacao a {
+    font-size: 14px;
+  }
+
+  #logoecobrieduque {
+    height: 40px;
+  }
+
+  .imgRedes {
+    height: 18px;
+  }
+
+  footer h5 {
+    font-size: 14px;
+  }
+
+  .imgRedesSociais {
+    height: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  #navegacao {
+    gap: 8px;
+  }
+
+  .botoesNavegacao a {
+    font-size: 13px;
+  }
+
+  #logoecobrieduque {
+    height: 35px;
+  }
+
+  .imgRedes {
+    height: 16px;
+  }
+
+  footer h5 {
+    font-size: 13px;
+  }
+
+  .imgRedesSociais {
+    height: 20px;
+  }
+}

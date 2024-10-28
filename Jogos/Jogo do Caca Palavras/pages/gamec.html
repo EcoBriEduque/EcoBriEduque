@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça-Palavras | Jogo</title>
+    <link rel="stylesheet" href="../css/gamec.css">
+    <link rel="shortcut icon" href="../../../../img/logoEcobrieduqueTitulo.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <img src="../../../../img/logoEcobrieduqueTitulo.png" alt="Logo do Jogo Caça-Palavras" id="img" class="centered-image">
+        
+        <!-- Container para o tempo e palavras encontradas -->
+        <div class="tempoecontagem">
+            <p id="tempo">Tempo de Jogo: <span id="timer">00:00</span></p>
+        </div>
+        
+        <div id="game"></div>
+        <div class="word">
+            <h2>Aqui estão as palavras:</h2>
+            <div id="words"></div>
+        </div>
+        <button id="reset">Reiniciar Jogo</button>
+    </div>
+    <script src="../js/gamec.js"></script>
+</body>
+</html>
