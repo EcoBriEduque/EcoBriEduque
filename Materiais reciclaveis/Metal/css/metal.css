@@ -1,0 +1,395 @@
+/* Resetando margens e espaçamentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+
+}
+
+:root {
+  --cor-primaria: #597653; 
+  --cor-secundaria: #a5bc94; 
+  --cor-fundo: #ffffe9;
+  --cor-botao: #597653de;
+  --cor-botaohover: #51694c;
+  --cor-explorarjogos: #a5bc94c0;
+  --cor-texto: #000000;
+}
+
+/* Estilos gerais */
+body {
+  background-color: var(--cor-fundo);
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-weight: normal;
+}
+
+header {
+  font-weight: normal;
+  background-color: var(--cor-primaria);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: rgb(0, 0, 0) 1px solid;
+}
+
+#logoecobrieduque {
+  height: 140px;
+}
+
+#navegacao {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: normal;
+  justify-content: center;
+  gap: 20px;
+  margin-right: 5%;
+  border-left: #a5bc94 1px solid;
+
+}
+
+.botoesNavegacao {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 20px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Animação suave para hover */
+
+}
+
+.botoesNavegacao a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-size: 20px;
+  text-align: center;
+}
+
+.imgRedes {
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+
+
+
+#MaterialMetal {
+  padding: 0.7rem;
+  margin-bottom: 30px;
+  background-color: transparent; /* Fundo transparente */
+  border-radius: 0; /* Removido o raio */
+  box-shadow: none; /* Removida a sombra */
+  animation: fadeIn 1s ease-in-out; /* Animação de entrada */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.imgMetal {
+  width: 20%;
+  height: auto;
+  margin: 40px auto; 
+  display: block; 
+  margin-bottom: 10px;
+}
+
+#MaterialMetal h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #F4DB38; /* Azul escuro */
+  margin-bottom: 1.5rem;
+  position: relative;
+  margin-top: 4.0rem;
+}
+
+#MaterialMetal h2::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: #F4DB38; /* Azul mais claro */
+  margin-top: 5px;
+  transition: width 0.3s ease;
+}
+
+#MaterialMetal h2:hover::after {
+  width: 150px; 
+}
+
+#MaterialMetal p {
+  margin-bottom: 0.7rem;
+  color: var(--cor-texto); 
+}
+
+
+table {
+width: 75%;
+border-collapse: collapse;
+margin-bottom: 20px;
+background-color: #ffffff; 
+border-radius: 10px; 
+
+}
+
+table th, table td {
+border: 1px solid #DBC32F; 
+padding: 8px; 
+text-align: center; 
+}
+
+table th {
+background-color: #F4DB38; 
+color: rgb(0, 0, 0);
+font-weight: bold; 
+}
+
+table tr:nth-child(even) {
+background-color: #fff7c4; 
+}
+
+
+.imglateraldireita {
+float: right; 
+width: 220px;
+margin-left: 15px;
+margin-right: 20px;
+margin-top: 0;
+margin-bottom: 8px; 
+}
+
+.imglateraldireita1 {
+float: right; 
+width: 180px;
+margin-left: 5px;
+margin-right: 20px;
+margin-top: 1px; 
+}
+
+#MaterialMetal a {
+  color: #DBC32F; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#MaterialMetal a:hover {
+  color: #DBC32F; 
+  text-decoration: underline;
+}
+
+#MaterialMetal br {
+  display: none; 
+}
+
+
+
+footer {
+  background-color: var(--cor-primaria);
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  border-top: rgb(0, 0, 0) 1px solid;
+}
+
+.VoltaraoTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #a5bc94;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.VoltaraoTopo img {
+  width: 24px;
+  height: 24px;
+}
+
+.VoltaraoTopo:hover {
+  background-color: #486143;
+  box-shadow: 0 4px 8px var(--cor-primaria); /* Adiciona uma sombra ao botão */
+
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.Rodape {
+  flex: 1;
+  min-width: 250px;
+}
+
+.Rodape h3 {
+  margin-top: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #a5bc94;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-family:  Arial, sans-serif;
+}
+
+.Rodape p, .Rodape ul {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.Rodape ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Rodape ul li {
+  margin-bottom: 10px;
+}
+
+.Rodape ul li a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.Rodape ul li a:hover {
+  color: #a5bc94;
+}
+
+.RedesSociais {
+  margin-top: 20px;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+  margin-bottom: 10px;
+}
+
+.sociais {
+  display: flex; 
+  align-items: center; 
+}
+
+.sociais img {
+  width: 40px; 
+  height: 40px; 
+  transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.sociais img:hover {
+  transform: scale(1.2); 
+  opacity: 0.8;
+}
+
+.Contato {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  padding: 8px; 
+  border: 1px solid #a5bc94; 
+  border-radius: 6px;
+  background-color: #a5bc94; 
+  width: fit-content; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 auto; 
+}
+
+.LinkContato {
+  display: flex;
+  align-items: center; 
+  text-decoration: none; 
+  color: rgb(0, 0, 0); 
+  transition: color 0.3s ease; 
+}
+
+
+.imgContato {
+  width: 20px; 
+  height: 20px;
+  margin-right: 6px;
+  object-fit: contain;
+  transition: transform 0.3s ease; 
+}
+
+
+.LinkContato span {
+  font-size: 12px; 
+  font-weight: 400; 
+  white-space: nowrap;
+}
+
+
+.Contato:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+.LinkContato:hover {
+  color: #486143;
+}
+
+
+.LinkContato:hover .imgContato {
+  transform: scale(1.2); 
+}
+
+.Direitos {
+  color: #a5bc94;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.Direitos p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.botoesNavegacao:hover {
+  transform: scale(1.2);
+  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+
+}
+#secaoInformacao{
+  width: 100%;
+  display:flex
+}
+ #secaoInformacao section{
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  background-color: #a5bc94;
+  border: #333 1px solid;
+  margin: 2%;
+
+ }
+
+ .links {
+  text-decoration: none;
+  color: #000000; /* Cor padrão do texto */
+  transition: color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+.links:hover h6 {
+  color: #a5bc94; /* Cor do texto ao passar o mouse */
+}
+
+
